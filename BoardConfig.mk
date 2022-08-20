@@ -1,3 +1,5 @@
+DEVICE_PATH := device/samsung/m10lte
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
