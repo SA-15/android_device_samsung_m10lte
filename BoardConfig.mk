@@ -40,6 +40,8 @@ BOARD_KERNEL_IMAGE_NAME := \
 	Image \
 	dtb.img
 
+BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/m10lte/bootimg.mk
+
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
