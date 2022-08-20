@@ -20,13 +20,3 @@ PRODUCT_NAME := omni_m10lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M105G
 PRODUCT_MANUFACTURER := samsung
-
-# Forcefully add mtp support (adb is already there)
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
-
-# Add fingerprint from Stock ROM build.prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    # These lines are from my device. You MUST Replace yours.
-    BUILD_FINGERPRINT="samsung/m10ltedx/m10lte:10/QP1A.190711.020/M105GDXS8CVA1:user/release-keys" \
-    PRIVATE_BUILD_DESC="m10ltedx-user 10 QP1A.190711.020 M105GDXS8CVA1 release-keys"
