@@ -11,9 +11,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Replace $$DEVICE$$ with your Device Name's Value.
 # Replace $$BRAND$$ with your Brand's / Manufacturer's Value.
-PRODUCT_COPY_FILES += 
-           device/samsung/m10lte/prebuilt/zImage:kernel \
-           device/samsung/m10lte/prebuilt/dt.img:boot.img
+PRODUCT_COPY_FILES += device/samsung/m10lte/prebuilt/dt.img:boot.img
 # Fles under $(LOCAL_PATH)/recovery/root/ gets automatically copied into recovery
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/*:root/*
 
