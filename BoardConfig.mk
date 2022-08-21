@@ -54,10 +54,12 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 LZMA_RAMDISK_TARGETS := recovery
+BOARD_HAS_NO_SELECT_BUTTON := true
 
 # System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_SUPPRESS_SECURE_ERASE := true
+BOARD_ROOT_EXTRA_FOLDERS := carrier omr efs cache cpefs debug_ramdisk
 
 # TWRP specific build flags
 RECOVERY_SDCARD_ON_DATA := true
